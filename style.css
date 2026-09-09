@@ -202,12 +202,24 @@ body {
 }
 
 .social-link-list {
-  font-size: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: #ffcccc;
+  font-size: 1.2em;
+  font-weight: bold;
   margin-top: 10px;
-  letter-spacing: 10px;
 }
 
-/* Supporting sidebar widgets */
+.discord-icon {
+  width: 28px;
+  height: 28px;
+  display: block;
+  filter: brightness(0) invert(1);
+}
+
+/* Supporting sidebar promotion */
 .sidebar-promo {
   background: linear-gradient(135deg, #330000 0%, #000000 100%);
   border: 3px dashed #880000;
@@ -227,35 +239,16 @@ body {
   text-shadow: none;
 }
 
-.now-playing-widget {
-  background: linear-gradient(180deg, #0a0a0a 0%, #330000 100%);
-  border: 3px solid #880000;
-  border-radius: 0;
-  padding: 15px;
-  text-align: center;
-  box-shadow:
-    0 8px 25px rgba(136, 0, 0, 0.4),
-    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+.sidebar-promo a {
+  color: #ffcccc;
+  text-decoration: underline;
 }
 
-.now-playing-widget h4 {
+.sidebar-promo a:hover,
+.sidebar-promo a:focus-visible {
   color: #ffffff;
-  margin-bottom: 10px;
-  text-shadow:
-    1px 1px 0px #880000,
-    0 0 10px rgba(136, 0, 0, 0.4);
-}
-
-.now-playing-display {
-  background: linear-gradient(135deg, #000000 0%, #660000 100%);
-  padding: 15px;
-  border-radius: 0;
-  font-weight: bold;
-  color: #bb9999;
-  border: 2px solid #880000;
-  box-shadow:
-    inset 0 2px 4px rgba(0, 0, 0, 0.8),
-    0 0 12px rgba(136, 0, 0, 0.25);
+  outline: 2px solid #bb4444;
+  outline-offset: 2px;
 }
 
 /* Blog feed */
@@ -333,7 +326,7 @@ body {
 }
 
 .post-body ul li::before {
-  content: "▸ ";
+  content: "> ";
   margin-right: 8px;
   color: #880000;
 }
@@ -415,6 +408,7 @@ body {
 /* Scrollbar Styling */
 ::-webkit-scrollbar {
   width: 8px;
+  height: 8px;
 }
 
 ::-webkit-scrollbar-track {
@@ -430,4 +424,8 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #bb4444;
   border: 1px solid #880000;
+}
+
+::-webkit-scrollbar-corner {
+  background: #0a0a0a;
 }
