@@ -212,7 +212,8 @@ body {
   margin-top: 10px;
 }
 
-.discord-icon {
+.discord-icon,
+.spotify-icon {
   width: 28px;
   height: 28px;
   display: block;
