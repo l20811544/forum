@@ -220,8 +220,8 @@ body {
   filter: brightness(0) invert(1);
 }
 
-/* Supporting sidebar promotion */
-.sidebar-promo {
+/* As long as the Trolls are trolling, the Rick is rolling */
+.rick-roll {
   background: linear-gradient(135deg, #330000 0%, #000000 100%);
   border: 3px dashed #880000;
   border-radius: 0;
@@ -234,19 +234,19 @@ body {
   font-weight: bold;
 }
 
-.sidebar-promo p {
+.rick-roll p {
   font-weight: bold;
   margin: 5px 0;
   text-shadow: none;
 }
 
-.sidebar-promo a {
+.rick-roll a {
   color: #ffcccc;
   text-decoration: underline;
 }
 
-.sidebar-promo a:hover,
-.sidebar-promo a:focus-visible {
+.rick-roll a:hover,
+.rick-roll a:focus-visible {
   color: #ffffff;
   outline: 2px solid #bb4444;
   outline-offset: 2px;
